@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  min-height: 100vh;                             /* full screen */
+  background-image: url('./icons8-math-96.png'); /* path to image */
+  background-position: center;                  /* center the image */
+  background-repeat: repeat;                    /* repeat the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;                         
+  justify-content: center;
+}
+
+
+/* White board */
+.white-board {
+  background-color: white; 
+  padding: 20px 40px;                            /* spacing inside the box */
+  border-radius: 10px;    
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  margin-top: 20px;                               /* space from the top */
+}
+
+/*the frame of the calculator*/
+.calculator {                                               
+  width: 270px;
+  margin: 50px auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  background: #3d3a3a;
+}
+
+/*the part of the calculator display*/
+.display {
+  background: #222;
+  color: rgb(248, 248, 248);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-family: monospace;
+  height: 60px;
+}
+
+/*input character*/
+.input {
+  font-size: 18px;
+}
+
+/*result character*/
+.result {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*the buttons grid*/
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+   
+}
+
+/*individual button style*/
+button {
+  padding: 20px;
+  font-size: 13px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+button.equals {
+  background: #69f36e;
+  color: black;
+}
+
+button.clear {
+  background: white;
+  color: #f16960;
+}
+
+button.del {
+  background: white;
+  color: #2f1cc5;
+}
+
+
